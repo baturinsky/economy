@@ -1,0 +1,1 @@
+declare const C:HTMLCanvasElement, IN:HTMLTextAreaElement, OUT:HTMLTextAreaElement;

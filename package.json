@@ -1,0 +1,16 @@
+{
+  "name": "ecomodel",
+  "version": "1.0.0",
+  "description": "Economy simulation",
+  "author": "@baturinsky",
+  "type": "module",
+  "scripts": {
+    "start": "esbuild src/prog.ts --bundle --target=es2016,chrome58 --outfile=public/bundle.js --watch",
+    "build": "esbuild src/prog.ts --bundle --target=es2016 --outfile=public/minified.js --minify && regpack distr/minified.js > distr/packed.js"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@ellbur/javascript-lp-solver": "^0.4.26",
+    "javascript-lp-solver": "^0.4.24"
+  }
+}
